@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Anta';
+  src: url('./Anta.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('./SourceSansPro.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSerifPro';
+  src: url('./SourceSerifPro/SourceSerifPro.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSerifPro';
+  src: url('./SourceSerifPro/SourceSerifPro-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSerifPro';
+  src: url('./SourceSerifPro/SourceSerifPro-It.otf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./Orbitron-Regular.woff') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./Orbitron-Regular.woff2') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

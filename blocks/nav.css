@@ -1,0 +1,63 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%; /* Ensure the nav spans the full width */
+  background-color: rgba(255, 255, 255, 0.9); /* Add a translucent background */
+  z-index: 10; /* Keep it above other elements */
+  padding: 20px; /* Add spacing around the nav */
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+}
+
+.nav_title {
+  font-family: "Anta", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-wrap: nowrap;
+}
+.nav_title__span {
+  color: #75a7d0;
+}
+
+.nav__logo {
+  width: 105px;
+  height: 39px;
+  position: relative;
+  margin-left: -50px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  column-gap: 75px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.9s ease-in-out;
+  font-family: "", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}
+
+.snowflake__icon {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  margin-left: -30px;
+}
