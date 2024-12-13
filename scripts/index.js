@@ -1,7 +1,6 @@
-import { setupCarousel } from './carousel.js';
 import './filter.js';
+import { initializeCardEvent } from './imageModal.js';
+import { initializeSwiper } from './carousel.js';
 
-setupCarousel();
-
-
-
+initializeCardEvent();
+initializeSwiper();

@@ -12,6 +12,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -26,7 +27,7 @@
   font-family: "Anta", "Times New Roman", serif;
   font-weight: 700;
   font-size: 40px;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin: 0;
 }
 
@@ -76,4 +77,70 @@
   height: 56px;
   position: relative;
   margin-left: -30px;
+}
+
+@media (max-width: 1024px) {
+  .nav__links {
+    column-gap: 50px;
+  }
+  .nav_title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    max-height: 90px;
+  }
+
+  .nav_title {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .nav__links {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav {
+    max-height: fit-content;
+    align-items: center;
+  }
+
+  .nav_title {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .nav__links {
+    visibility: hidden;
+  }
+
+  .snowflake__icon {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav_title {
+    font-size: 20px;
+  }
+
+  .nav__links {
+    row-gap: 10px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .snowflake__icon {
+    width: 30px;
+    height: 30px;
+  }
 }

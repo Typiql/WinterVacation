@@ -1,8 +1,7 @@
 .developers {
 display: flex;
 flex-direction: column;
-/* background-image: url("../images/woodBackdrop.jpg"); */
-background-image: url("../images/devbackground.jpg");
+background-color: rgb(20, 20, 20);
 background-size: cover;
 background-repeat: no-repeat;
 font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
@@ -11,9 +10,8 @@ justify-content: space-around;
 
 .developers__title {
   margin: 0 auto;
-  color: sienna;
+  color: rgb(255, 255, 255);
   font-size: 50px;
-  opacity: .5;
   padding-top: 30px;
   padding-bottom: 30px;
 }

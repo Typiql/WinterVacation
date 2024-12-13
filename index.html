@@ -10,6 +10,7 @@
     <title>Resort Routes</title>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script type="module" src="./scripts/index.js" defer></script>
   </head>
   <body class="page">
@@ -45,8 +46,6 @@
       </section>
       <div class="searchbar-container">
         <div class="searchbar" id="plan">
-            <!-- Hi, since we are only offering 3 options to fly into, I also made this a drop down
-          <input class="searchbar__search-input" type="search" placeholder="Traveling to..." id="plan" novalidate> -->
           <div class="dropdown">
             <button class="dropdown-btn">Flying into...</button>
             <div class="dropdown__content">
@@ -67,173 +66,75 @@
               <a class="dropdown__content-item" href="#">Total Lifts</a>
               <a class="dropdown__content-item" href="#">Total Slopes</a>
             </div>
-<!-- We could also include: Base elevation & Vertical drop -->
           </div>
           <button class="searchbar-find-btn">
             Find Route
             <!-- On click this find route button should take user down to map section -->
           </button>
         </div>
-<!--
-Snow Mass (CO)
-Telluride (CO),
-Vail (CO) -->
-      <section class="locations" id="resorts">
-        <img class="locations-carousel-arrow" src="./images/Arrow.svg" id="left-arrow">
-        <img class="locations-carousel-arrow" src="./images/Arrow.svg" id="right-arrow">
-        <div class="locations-holder">
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/angelfire_night.jpg"
-              alt="Night skiing at Angel Fire from Angel Fire Resort Website"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Angel Fire, New Mexico</p>
-              <p class="card__title">Angel Fire Resort</p>
-              <p class="card__description">Perfectly positioned in the Sangre de Cristo
-                Mountains in the Southern Rockies, Angel Fire Resort is the spot for
-                recreational activities the whole family can enjoy. Angel Fire
-                offers the only night skiing in New Mexico.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/crestedbutte.png"
-              alt="Night skiing at Angel Fire from Angel Fire Resort Website"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Crested Butte, CO</p>
-              <p class="card__title">Crested Butte Mountain Resort</p>
-              <p class="card__description">Crested Butte has been named one of the
-                Best Ski Resorts in Colorado by Forbes! From its untamed spirit to
-                its thrilling extreme terrain, discover what sets Crested Butte apart
-                and start planning your unforgettable mountain adventure.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/jacksonhole.jpg"
-              alt="Gondola at Jackson Hole Mountain Resort"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Jackson Hole, Wyoming</p>
-              <p class="card__title">Jackson Hole Mountain Resort</p>
-              <p class="card__description">John Colter was released from the Lewis and Clark
-                Expedition to trap furs on the Yellowstone and Upper Missouri rivers where
-                he became the first-known person of European decent to enter Jackson Hole. from
-                humble beginnings, Jackson Hole is one of the most premier winter destinations
-                in the world.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/parkcity.jpg"
-              alt="Photo of skiier at Park City, UT at dusk"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Park City, Utah</p>
-              <p class="card__title">Park City Mountain</p>
-              <p class="card__description">Welcome you to the largest ski resort in the U.S.
-                This is the only place where you can spend the day exploring 3,200+ vertical
-                feet of dynamic skiing or cruise the gentle rolling terrain of High Meadow
-                Park. This is your mountain to explore.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/powdermountain.avif"
-              alt="Ski Lifts at Powder Mountain"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Eden, Utah</p>
-              <p class="card__title">Powder Mountain</p>
-              <p class="card__description">Escape the masses at Powder Mountain. Epically
-                picturesque and pristine, Powder Mountain has welcomed outdoor revelers for
-                generations. With 122 runs, you are sure to find an adventure.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/sandiapeakkids.avif"
-              alt="Parent and child skiing at Sandia Peaks"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Albuquerque, NM</p>
-              <p class="card__title">Sandia Peak Ski Area</p>
-              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
-                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
-                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
-                destination for all ski enthusiasts. Originally known as La Madera Ski Area
-                and established in 1936, it holds the honor of being New Mexico's first-ever
-                ski resort.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/sandiapeakkids.avif"
-              alt="Parent and child skiing at Sandia Peaks"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Snowmass, CO</p>
-              <p class="card__title">Sandia Peak Ski Area</p>
-              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
-                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
-                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
-                destination for all ski enthusiasts. Originally known as La Madera Ski Area
-                and established in 1936, it holds the honor of being New Mexico's first-ever
-                ski resort.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/sandiapeakkids.avif"
-              alt="Parent and child skiing at Sandia Peaks"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Telluride, CO</p>
-              <p class="card__title">Sandia Peak Ski Area</p>
-              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
-                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
-                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
-                destination for all ski enthusiasts. Originally known as La Madera Ski Area
-                and established in 1936, it holds the honor of being New Mexico's first-ever
-                ski resort.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card__image"
-              src="./images/sandiapeakkids.avif"
-              alt="Parent and child skiing at Sandia Peaks"
-            />
-            <div class="card-text-container">
-              <p class="card__location">Vail, CO</p>
-              <p class="card__title">Sandia Peak Ski Area</p>
-              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
-                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
-                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
-                destination for all ski enthusiasts. Originally known as La Madera Ski Area
-                and established in 1936, it holds the honor of being New Mexico's first-ever
-                ski resort.
-              </p>
-            </div>
+      </div>
+<section class="locations" id="resorts">
+  <div class="swiper locations-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card__image" src="./images/angelfire_night.jpg" alt="Night skiing at Angel Fire" />
+          <div class="card-text-container">
+            <p class="card__location">Angel Fire, New Mexico</p>
+            <p class="card__title">Angel Fire Resort</p>
+            <p class="card__description">Perfectly positioned in the Sangre de Cristo Mountains, Angel Fire Resort offers the only night skiing in New Mexico.</p>
           </div>
         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card__image" src="./images/crestedbutte.png" alt="Crested Butte, CO" />
+          <div class="card-text-container">
+            <p class="card__location">Crested Butte, CO</p>
+            <p class="card__title">Crested Butte Mountain Resort</p>
+            <p class="card__description">One of the Best Ski Resorts in Colorado, offering thrilling terrain for skiing and adventure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card__image" src="./images/jacksonhole.jpg" alt="Jackson Hole" />
+          <div class="card-text-container">
+            <p class="card__location">Jackson Hole, Wyoming</p>
+            <p class="card__title">Jackson Hole Mountain Resort</p>
+            <p class="card__description">Explore one of the most premier winter destinations with some of the best slopes in the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card__image" src="./images/jacksonhole.jpg" alt="Jackson Hole" />
+          <div class="card-text-container">
+            <p class="card__location">Jackson Hole, Wyoming</p>
+            <p class="card__title">Jackson Hole Mountain Resort</p>
+            <p class="card__description">Explore one of the most premier winter destinations with some of the best slopes in the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card__image" src="./images/jacksonhole.jpg" alt="Jackson Hole" />
+          <div class="card-text-container">
+            <p class="card__location">Jackson Hole, Wyoming</p>
+            <p class="card__title">Jackson Hole Mountain Resort</p>
+            <p class="card__description">Explore one of the most premier winter destinations with some of the best slopes in the world.
+              Explore one of the most premier winter destinations with some of the best slopes in the world
+              Explore one of the most premier winter destinations with some of the best slopes in the world
+              Explore one of the most premier winter destinations with some of the best slopes in the world
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
         <p class="locations__subtext">Chart your
           <span class="locations__subtext_span">course!</span>
         </p>
@@ -248,7 +149,7 @@ Vail (CO) -->
         <!-- Insert Map Content Here! -->
       </section>
       <section class="developers" id="about_us">
-        <h2 class="developers__title">created by</h2>
+        <h2 class="developers__title">Created by</h2>
         <div class="dev-card-container">
         <div class="dev-card">
           <img
@@ -309,9 +210,21 @@ Vail (CO) -->
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__title">&#169; The Jingle Belles (folks above)
-        for Triple Ten's December 2024 Code Jam
-      </p>
+      <p class="footer__title" >Brought to you by <br>The Jingle Belle's Team</p>
     </footer>
+    <div class="modal" id="view-image-modal">
+      <div class="modal__container modal__container_image">
+        <button
+          type="button"
+          class="modal__close-btn modal__close-btn_image"
+          id="view-image-modal-close-btn"
+        ></button>
+        <img class="modal__image" src="#" alt="#" />
+        <div class="modal-text-container">
+          <p class="modal__title"></p>
+          <p class="modal__caption"></p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

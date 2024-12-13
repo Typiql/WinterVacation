@@ -13,6 +13,7 @@
   display: inline-block;
   background-image: url("../images/Skiing.png");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 650px;
 }
@@ -38,4 +39,54 @@
   font-size: 128px;
   font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
   animation: slideFadeIn 0.8s ease-out forwards;
+}
+
+@media (max-width: 950px) {
+  .introduction {
+    height: 500px;
+  }
+
+  .introduction__title {
+    margin: 150px auto;
+  }
+
+  .introduction__span-accent {
+    font-size: 100px;
+    color: rgb(251, 255, 40);
+    margin: 0;
+  }
+
+  .introduction__span-unwind {
+    font-size: 96px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .introduction {
+    height: 400px;
+  }
+
+  .introduction__title {
+    margin: 75px;
+  }
+
+  .introduction__span-accent {
+    font-size: 100px;
+  }
+
+  .introduction__span-unwind {
+    font-size: 96px;
+  }
+}
+
+@media (max-width: 520px) {
+  .introduction {
+    height: 325px;
+    background-position: top;
+  }
+
+  .introduction__title {
+    visibility: hidden;
+  }
 }
