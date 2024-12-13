@@ -29,6 +29,10 @@
   margin-left: 10px;
 }
 
+.searchbar__search-input:hover {
+  background-color: #628caf;
+}
+
 .searchbar__search-input::placeholder {
   color: white;
 }
@@ -112,3 +116,10 @@
   background-color: #628caf;
 }
 
+.selected {
+ background-color: #628caf;
+}
+
+.selected:hover {
+  background-color: #50799b;
+}

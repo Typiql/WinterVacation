@@ -10,6 +10,7 @@
   max-height: 516px;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 
 .locations__subtext {
@@ -19,4 +20,24 @@
   font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
   font-size: 64px;
   color: #7f7f7f;
+}
+
+.locations-carousel-arrow {
+  position: absolute;
+  transform: scaleX(-1);
+  top: 160px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.locations-carousel-arrow:nth-child(1) {
+  right: 20px;
+  transform: scaleX(1);
+}
+
+.locations-carousel-arrow:hover {
+  opacity: 0.8;
 }
