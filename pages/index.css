@@ -3,5 +3,12 @@
 @import url(../blocks/page.css);
 @import url(../blocks/main.css);
 @import url(../blocks/header.css);
+@import url(../blocks/searchbar.css);
+@import url(../blocks/introduction.css);
+@import url(../blocks/locations.css);
+@import url(../blocks/card.css);
+@import url(../blocks/map.css);
+@import url(../blocks/developers.css);
+@import url(../blocks/dev-card.css);
 @import url(../blocks/footer.css);
 @import url(../blocks/nav.css);

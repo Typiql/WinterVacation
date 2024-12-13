@@ -1,0 +1,114 @@
+.searchbar-container {
+  position: relative;
+  font-family: "SourceSerifPro", "Times New Roman", serif;
+}
+
+.searchbar {
+  display: flex;
+  width: 1260px;
+  height: 130px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -180px;
+  left: calc(50% - 630px);
+  background-color: white;
+  border-radius: 8px;
+}
+
+.searchbar__search-input {
+  margin: auto 0;
+  background-color: #75a7d0;
+  opacity: 1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 380px;
+  height: 60px;
+  font-size: 24px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.searchbar__search-input::placeholder {
+  color: white;
+}
+
+.searchbar__search-input:focus {
+  outline: none;
+  background-color: #628caf;
+}
+
+.searchbar-find-btn {
+  width: 300px;
+  height: 59px;
+  background: rgb(83, 109, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(83, 109, 160, 1) 0%,
+    rgba(115, 163, 203, 1) 35%
+  );
+  border: none;
+  border-radius: 8px;
+  margin: auto 17px auto auto;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+  color: white;
+  font-size: 36px;
+}
+
+.searchbar-find-btn:hover {
+  opacity: 0.6;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  margin: auto 0 auto 20px;
+}
+
+.dropdown-btn {
+  background-color: #75a7d0;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 380px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #f1f1f1;
+  width: 380px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown__content-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__content-item:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+  background-color: #628caf;
+}
+

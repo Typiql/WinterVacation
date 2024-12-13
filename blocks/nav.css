@@ -1,17 +1,25 @@
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
-  width: 100%; /* Ensure the nav spans the full width */
-  background-color: rgba(255, 255, 255, 0.9); /* Add a translucent background */
-  z-index: 10; /* Keep it above other elements */
-  padding: 20px; /* Add spacing around the nav */
-  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  width: 100%;
+  height: 89px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .nav_title {
@@ -19,7 +27,9 @@
   font-weight: 700;
   font-size: 40px;
   text-wrap: nowrap;
+  margin: 0;
 }
+
 .nav_title__span {
   color: #75a7d0;
 }
@@ -27,28 +37,34 @@
 .nav__logo {
   width: 105px;
   height: 39px;
-  position: relative;
-  margin-left: -50px;
 }
 
 .nav__links {
+  font-family: "Inter", Arial, sans-serif;
   display: flex;
   list-style-type: none;
   column-gap: 75px;
   padding: 0;
   margin: 0;
   align-items: center;
-  text-wrap: nowrap;
+}
+
+.nav__item {
+  animation: slideInFromRight 0.8s ease-out;
+}
+
+.nav__item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.nav__item:nth-child(3) {
+  animation-delay: 0.2s;
 }
 
 .nav__link {
   color: #000000;
   text-decoration: none;
-  transition: color 0.9s ease-in-out;
-  font-family: "", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  transition: color 0.1s ease-in-out;
 }
 
 .nav__link:hover {

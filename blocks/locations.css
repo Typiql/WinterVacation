@@ -1,0 +1,22 @@
+.locations {
+  margin-top: 108px;
+  padding: 0 20px;
+}
+
+.locations-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  overflow: hidden;
+  max-height: 516px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.locations__subtext {
+  width: fit-content;
+  height: fit-content;
+  margin: 32px auto;
+  font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
+  font-size: 64px;
+  color: #7f7f7f;
+}

@@ -1,0 +1,34 @@
+.dev-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dev-card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto 0;
+  font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
+}
+
+.dev-card__image {
+  border-radius: 50%;
+  width: 325px;
+  height: 325px;
+  object-fit: cover;
+}
+
+.dev-card-text-container {
+  margin: 0 auto;
+}
+
+.dev-card__name {
+  text-align: center;
+  font-size: 30px;
+}
+
+.dev-card__role {
+  text-align: center;
+  font-size: 40px;
+  color: #70A0C7;
+}

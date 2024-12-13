@@ -10,42 +10,174 @@
   <body class="page">
     <header class="header">
       <nav class="nav">
-        <p class="nav_title" >
+        <p class="nav_title">
           Resort <span class="nav_title__span">Routes</span>
         </p>
-        <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
         <ul class="nav__links">
-          <li>
+          <li class="nav__item">
             <a href="#plan" class="nav__link">Plan</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#resorts" class="nav__link">Resorts</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#about_us" class="nav__link">About Us</a>
           </li>
           <img
-          src="./images/snowflake-icon.svg"
-          alt="Snowflake snowflake-icon"
-          class="snowflake__icon"
-        />
+            src="./images/snowflake-icon.svg"
+            alt="snowflake-icon"
+            class="snowflake__icon"
+          />
         </ul>
       </nav>
-      <h1 class="header__title">
-        <span class="header__span-accent">Break free and</span>
-        <span class="header__word-unwind">unwind.</span>
-      </h1>
-      <img
-      src="./images/Skiing.png"
-      alt="Main Cabin"
-      class="header__image"
-    />
     </header>
     <main class="main">
-      <!-- Insert Main Content Here! -->
+      <section class="introduction">
+        <h1 class="introduction__title">
+          <span class="introduction__span-accent">Break free and</span>
+          <span class="introduction__span-unwind">unwind.</span>
+        </h1>
+      </section>
+      <div class="searchbar-container">
+        <div class="searchbar">
+            <input class="searchbar__search-input" type="search" placeholder="Traveling to..." novalidate>
+          <div class="dropdown">
+            <button class="dropdown-btn">Filter by:</button>
+            <div class="dropdown__content">
+              <a class="dropdown__content-item" href="#">Child Friendly</a>
+              <a class="dropdown__content-item" href="#">Total Lifts</a>
+              <a class="dropdown__content-item" href="#">Total Slopes</a>
+            </div>
+          </div>
+          <button class="searchbar-find-btn">
+            Find Route
+          </button>
+        </div>
+      <section class="locations">
+        <div class="locations-holder">
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/ExamplePerson.jpg"
+              alt="example! Not Gonna Be Used In Final Project"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Berrien Springs, MI</p>
+              <p class="card__title">An Amazing Place!</p>
+              <p class="card__description">Example!</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/ExamplePerson.jpg"
+              alt="example! Not Gonna Be Used In Final Project"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Berrien Springs, MI</p>
+              <p class="card__title">An Amazing Place!</p>
+              <p class="card__description">Example!</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/ExamplePerson.jpg"
+              alt="example! Not Gonna Be Used In Final Project"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Berrien Springs, MI</p>
+              <p class="card__title">An Amazing Place!</p>
+              <p class="card__description">Example!</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/ExamplePerson.jpg"
+              alt="example! Not Gonna Be Used In Final Project"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Berrien Springs, MI</p>
+              <p class="card__title">An Amazing Place!</p>
+              <p class="card__description">Example!</p>
+            </div>
+          </div>
+        </div>
+        <p class="locations__subtext">Discover these locations</p>
+      </section>
+      <img
+        src="./images/pageBreakLine.png"
+        alt="page line break"
+        class="page__line-break"
+      />
+      <section class="map">
+        <h2 class="map__title">This will be the map, couldn't figure it out yet but ready to be implemented.</h2>
+        <!-- Insert Map Content Here! -->
+      </section>
+      <section class="developers">
+        <h2 class="developers__title">Developers</h2>
+        <div class="dev-card-container">
+        <div class="dev-card">
+          <img
+            class="dev-card__image"
+            src="./images/alex.jpg"
+            alt="example! Not Gonna Be Used In Final Project"
+          />
+          <div class="dev-card-text-container">
+            <p class="dev-card__name">Alex</p>
+            <p class="dev-card__role">Software Engineer</p>
+          </div>
+        </div>
+        <div class="dev-card">
+          <img
+            class="dev-card__image"
+            src="./images/ExamplePerson.jpg"
+            alt="example! Not Gonna Be Used In Final Project"
+          />
+          <div class="dev-card-text-container">
+            <p class="dev-card__name">Martin</p>
+            <p class="dev-card__role">Software Engineer</p>
+          </div>
+        </div>
+        <div class="dev-card">
+          <img
+            class="dev-card__image"
+            src="./images/ExamplePerson.jpg"
+            alt="example! Not Gonna Be Used In Final Project"
+          />
+          <div class="dev-card-text-container">
+            <p class="dev-card__name">Ana</p>
+            <p class="dev-card__role">Software Engineer</p>
+          </div>
+        </div>
+        <div class="dev-card">
+          <img
+            class="dev-card__image"
+            src="./images/ExamplePerson.jpg"
+            alt="example! Not Gonna Be Used In Final Project"
+          />
+          <div class="dev-card-text-container">
+            <p class="dev-card__name">Bridget</p>
+            <p class="dev-card__role">Data Scientist</p>
+          </div>
+        </div>
+        <div class="dev-card">
+          <img
+            class="dev-card__image"
+            src="./images/ExamplePerson.jpg"
+            alt="example! Not Gonna Be Used In Final Project"
+          />
+          <div class="dev-card-text-container">
+            <p class="dev-card__name">Michael</p>
+            <p class="dev-card__role">Data Scientist</p>
+          </div>
+        </div>
+      </div>
+      </section>
     </main>
     <footer class="footer">
-      <!-- Insert Footer Content Here! -->
+      <p class="footer__title">Example Text</p>
     </footer>
   </body>
 </html>
