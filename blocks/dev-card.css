@@ -1,6 +1,8 @@
 .dev-card-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .dev-card {
@@ -13,8 +15,8 @@
 
 .dev-card__image {
   border-radius: 50%;
-  width: 325px;
-  height: 325px;
+  width: 225px;
+  height: 225px;
   object-fit: cover;
 }
 
@@ -25,10 +27,15 @@
 .dev-card__name {
   text-align: center;
   font-size: 30px;
+  opacity: .7;
+  margin: 0;
+  text-shadow: 1px 1px white;
 }
 
 .dev-card__role {
   text-align: center;
-  font-size: 40px;
-  color: #70A0C7;
+  font-size: 25px;
+  color: #447198;
+  margin: 0;
+  text-shadow: 1px 1px white;
 }

@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeatherApp</title>
+    <meta name="authors" content="Bridget Due, Michael Fulciniti, Alex
+     Johnson, Ana Maria Martinez, Martin Young" />
+    <meta name="description" content="Routes to Your Favorite Ski Resorts" />
+    <meta name="keywords" content="ski, snowboard, Mountain West, resort, travel" />
+    <title>Resort Routes</title>
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="favicon.ico" />
     <script type="module" src="./scripts/index.js" defer></script>
   </head>
   <body class="page">
@@ -39,152 +44,253 @@
         </h1>
       </section>
       <div class="searchbar-container">
-        <div class="searchbar">
-            <input class="searchbar__search-input" type="search" placeholder="Traveling to..." novalidate>
+        <div class="searchbar" id="plan">
+            <!-- Hi, since we are only offering 3 options to fly into, I also made this a drop down
+          <input class="searchbar__search-input" type="search" placeholder="Traveling to..." id="plan" novalidate> -->
           <div class="dropdown">
-            <button class="dropdown-btn">Filter by:</button>
+            <button class="dropdown-btn">Flying into...</button>
+            <div class="dropdown__content">
+              <a class="dropdown__content-item" href="#">Albuquerque International Airport</a>
+              <a class="dropdown__content-item" href="#">Denver International Airport</a>
+              <a class="dropdown__content-item" href="#">Casper Natrona International Airport</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-btn">Filter resorts by:</button>
             <div class="dropdown__content">
               <a class="dropdown__content-item" href="#">Child Friendly</a>
+              <a class="dropdown__content-item" href="#">Highest Peak</a>
+              <a class="dropdown__content-item" href="#">Longest Run</a>
+              <a class="dropdown__content-item" href="#">Night Skiing</a>
+              <a class="dropdown__content-item" href="#">Most Advanced Runs</a>
+              <a class="dropdown__content-item" href="#">Most Snowfall</a>
               <a class="dropdown__content-item" href="#">Total Lifts</a>
               <a class="dropdown__content-item" href="#">Total Slopes</a>
             </div>
+<!-- We could also include: Base elevation & Vertical drop -->
           </div>
           <button class="searchbar-find-btn">
             Find Route
+            <!-- On click this find route button should take user down to map section -->
           </button>
         </div>
-      <section class="locations">
+<!--
+Snow Mass (CO)
+Telluride (CO),
+Vail (CO) -->
+      <section class="locations" id="resorts">
         <img class="locations-carousel-arrow" src="./images/Arrow.svg" id="left-arrow">
         <img class="locations-carousel-arrow" src="./images/Arrow.svg" id="right-arrow">
         <div class="locations-holder">
           <div class="card">
             <img
               class="card__image"
-              src="./images/ExamplePerson.jpg"
-              alt="example! Not Gonna Be Used In Final Project"
+              src="./images/angelfire_night.jpg"
+              alt="Night skiing at Angel Fire from Angel Fire Resort Website"
             />
             <div class="card-text-container">
-              <p class="card__location">Berrien Springs, MI</p>
-              <p class="card__title">An Amazing Place!</p>
-              <p class="card__description">Example!</p>
+              <p class="card__location">Angel Fire, New Mexico</p>
+              <p class="card__title">Angel Fire Resort</p>
+              <p class="card__description">Perfectly positioned in the Sangre de Cristo
+                Mountains in the Southern Rockies, Angel Fire Resort is the spot for
+                recreational activities the whole family can enjoy. Angel Fire
+                offers the only night skiing in New Mexico.
+              </p>
             </div>
           </div>
           <div class="card">
             <img
               class="card__image"
-              src="./images/woodBackdrop.jpg"
-              alt="example! Not Gonna Be Used In Final Project"
+              src="./images/crestedbutte.png"
+              alt="Night skiing at Angel Fire from Angel Fire Resort Website"
             />
             <div class="card-text-container">
-              <p class="card__location">Berrien Springs, MI</p>
-              <p class="card__title">An Amazing Place!</p>
-              <p class="card__description">Example!</p>
+              <p class="card__location">Crested Butte, CO</p>
+              <p class="card__title">Crested Butte Mountain Resort</p>
+              <p class="card__description">Crested Butte has been named one of the
+                Best Ski Resorts in Colorado by Forbes! From its untamed spirit to
+                its thrilling extreme terrain, discover what sets Crested Butte apart
+                and start planning your unforgettable mountain adventure.
+              </p>
             </div>
           </div>
           <div class="card">
             <img
               class="card__image"
-              src="./images/ExamplePerson.jpg"
-              alt="example! Not Gonna Be Used In Final Project"
+              src="./images/jacksonhole.jpg"
+              alt="Gondola at Jackson Hole Mountain Resort"
             />
             <div class="card-text-container">
-              <p class="card__location">Berrien Springs, MI</p>
-              <p class="card__title">An Amazing Place!</p>
-              <p class="card__description">Example!</p>
+              <p class="card__location">Jackson Hole, Wyoming</p>
+              <p class="card__title">Jackson Hole Mountain Resort</p>
+              <p class="card__description">John Colter was released from the Lewis and Clark
+                Expedition to trap furs on the Yellowstone and Upper Missouri rivers where
+                he became the first-known person of European decent to enter Jackson Hole. from
+                humble beginnings, Jackson Hole is one of the most premier winter destinations
+                in the world.
+              </p>
             </div>
           </div>
           <div class="card">
             <img
               class="card__image"
-              src="./images/ExamplePerson.jpg"
-              alt="example! Not Gonna Be Used In Final Project"
+              src="./images/parkcity.jpg"
+              alt="Photo of skiier at Park City, UT at dusk"
             />
             <div class="card-text-container">
-              <p class="card__location">Berrien Springs, MI</p>
-              <p class="card__title">An Amazing Place!</p>
-              <p class="card__description">Example!</p>
+              <p class="card__location">Park City, Utah</p>
+              <p class="card__title">Park City Mountain</p>
+              <p class="card__description">Welcome you to the largest ski resort in the U.S.
+                This is the only place where you can spend the day exploring 3,200+ vertical
+                feet of dynamic skiing or cruise the gentle rolling terrain of High Meadow
+                Park. This is your mountain to explore.</p>
             </div>
           </div>
           <div class="card">
             <img
               class="card__image"
-              src="./images/ExamplePerson.jpg"
-              alt="example! Not Gonna Be Used In Final Project"
+              src="./images/powdermountain.avif"
+              alt="Ski Lifts at Powder Mountain"
             />
             <div class="card-text-container">
-              <p class="card__location">Berrien Springs, MI</p>
-              <p class="card__title">An</p>
-              <p class="card__description">Example!</p>
+              <p class="card__location">Eden, Utah</p>
+              <p class="card__title">Powder Mountain</p>
+              <p class="card__description">Escape the masses at Powder Mountain. Epically
+                picturesque and pristine, Powder Mountain has welcomed outdoor revelers for
+                generations. With 122 runs, you are sure to find an adventure.
+              </p>
             </div>
           </div>
           <div class="card">
             <img
               class="card__image"
-              src="./images/ExamplePerson.jpg"
-              alt="example! Not Gonna Be Used In Final Project"
+              src="./images/sandiapeakkids.avif"
+              alt="Parent and child skiing at Sandia Peaks"
             />
             <div class="card-text-container">
-              <p class="card__location">Berrien Springs, MI</p>
-              <p class="card__title">An Amazing</p>
-              <p class="card__description">Example!</p>
+              <p class="card__location">Albuquerque, NM</p>
+              <p class="card__title">Sandia Peak Ski Area</p>
+              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
+                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
+                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
+                destination for all ski enthusiasts. Originally known as La Madera Ski Area
+                and established in 1936, it holds the honor of being New Mexico's first-ever
+                ski resort.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/sandiapeakkids.avif"
+              alt="Parent and child skiing at Sandia Peaks"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Snowmass, CO</p>
+              <p class="card__title">Sandia Peak Ski Area</p>
+              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
+                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
+                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
+                destination for all ski enthusiasts. Originally known as La Madera Ski Area
+                and established in 1936, it holds the honor of being New Mexico's first-ever
+                ski resort.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/sandiapeakkids.avif"
+              alt="Parent and child skiing at Sandia Peaks"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Telluride, CO</p>
+              <p class="card__title">Sandia Peak Ski Area</p>
+              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
+                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
+                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
+                destination for all ski enthusiasts. Originally known as La Madera Ski Area
+                and established in 1936, it holds the honor of being New Mexico's first-ever
+                ski resort.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./images/sandiapeakkids.avif"
+              alt="Parent and child skiing at Sandia Peaks"
+            />
+            <div class="card-text-container">
+              <p class="card__location">Vail, CO</p>
+              <p class="card__title">Sandia Peak Ski Area</p>
+              <p class="card__description">Kids ski for free at Sandia Peak! Making it the
+                perfect family getaway. Sandia Peak Ski Area, located in the majestic Sandia
+                Mountains just 35 miles northeast of Albuquerque, New Mexico, is a must-visit
+                destination for all ski enthusiasts. Originally known as La Madera Ski Area
+                and established in 1936, it holds the honor of being New Mexico's first-ever
+                ski resort.
+              </p>
             </div>
           </div>
         </div>
-        <p class="locations__subtext">Discover these locations</p>
+        <p class="locations__subtext">Chart your
+          <span class="locations__subtext_span">course!</span>
+        </p>
       </section>
       <img
         src="./images/pageBreakLine.png"
         alt="page line break"
         class="page__line-break"
       />
-      <section class="map">
+      <section class="map" id="map">
         <h2 class="map__title">This will be the map, couldn't figure it out yet but ready to be implemented.</h2>
         <!-- Insert Map Content Here! -->
       </section>
-      <section class="developers">
-        <h2 class="developers__title">Developers</h2>
+      <section class="developers" id="about_us">
+        <h2 class="developers__title">created by</h2>
         <div class="dev-card-container">
         <div class="dev-card">
           <img
             class="dev-card__image"
             src="./images/alex.jpg"
-            alt="example! Not Gonna Be Used In Final Project"
+            alt="Photo of Alex Johnson"
           />
           <div class="dev-card-text-container">
-            <p class="dev-card__name">Alex</p>
+            <p class="dev-card__name">Alex Johnson</p>
             <p class="dev-card__role">Software Engineer</p>
           </div>
         </div>
         <div class="dev-card">
           <img
             class="dev-card__image"
-            src="./images/ExamplePerson.jpg"
-            alt="example! Not Gonna Be Used In Final Project"
+            src="./images/marty.jpeg"
+            alt="Photo of Martin Young"
           />
           <div class="dev-card-text-container">
-            <p class="dev-card__name">Martin</p>
+            <p class="dev-card__name">Martin Young</p>
             <p class="dev-card__role">Software Engineer</p>
           </div>
         </div>
         <div class="dev-card">
           <img
             class="dev-card__image"
-            src="./images/ExamplePerson.jpg"
-            alt="example! Not Gonna Be Used In Final Project"
+            src="./images/ana.jpeg"
+            alt="Photo of Ana Maria Martinez"
           />
           <div class="dev-card-text-container">
-            <p class="dev-card__name">Ana</p>
+            <p class="dev-card__name">Ana Maria Martinez</p>
             <p class="dev-card__role">Software Engineer</p>
           </div>
         </div>
         <div class="dev-card">
           <img
             class="dev-card__image"
-            src="./images/ExamplePerson.jpg"
-            alt="example! Not Gonna Be Used In Final Project"
+            src="./images/bridget.jpeg"
+            alt="Photo of Bridget Due"
           />
           <div class="dev-card-text-container">
-            <p class="dev-card__name">Bridget</p>
+            <p class="dev-card__name">Bridget Due</p>
             <p class="dev-card__role">Data Scientist</p>
           </div>
         </div>
@@ -195,7 +301,7 @@
             alt="example! Not Gonna Be Used In Final Project"
           />
           <div class="dev-card-text-container">
-            <p class="dev-card__name">Michael</p>
+            <p class="dev-card__name">Michael Fulciniti</p>
             <p class="dev-card__role">Data Scientist</p>
           </div>
         </div>
@@ -203,7 +309,9 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__title">Example Text</p>
+      <p class="footer__title">&#169; The Jingle Belles (folks above)
+        for Triple Ten's December 2024 Code Jam
+      </p>
     </footer>
   </body>
 </html>

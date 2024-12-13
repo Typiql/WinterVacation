@@ -17,9 +17,13 @@
   width: fit-content;
   height: fit-content;
   margin: 32px auto;
-  font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
+  font-family: "Anta", "Times New Roman", serif;
   font-size: 64px;
   color: #7f7f7f;
+}
+
+.locations__subtext_span {
+  color: #75a7d0;
 }
 
 .locations-carousel-arrow {

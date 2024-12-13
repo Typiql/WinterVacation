@@ -45,5 +45,5 @@
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   white-space: normal;
-  overflow: hidden;
+  overflow: scroll;
 }
