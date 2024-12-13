@@ -1,0 +1,3 @@
+[submodule "WinterVacation"]
+  path = WinterVacation
+  url = <URL-of-your-submodule>
