@@ -49,23 +49,23 @@
           <div class="dropdown">
             <button class="dropdown-btn">Flying into...</button>
             <div class="dropdown__content">
-              <a class="dropdown__content-item" href="#">Albuquerque International Airport</a>
-              <a class="dropdown__content-item" href="#">Denver International Airport</a>
-              <a class="dropdown__content-item" href="#">Casper Natrona International Airport</a>
-              <a class="dropdown__content-item" href="#">Salt Lake City International Airport</a>
+              <a class="dropdown__content-item">Albuquerque International Airport</a>
+              <a class="dropdown__content-item">Denver International Airport</a>
+              <a class="dropdown__content-item">Casper Natrona International Airport</a>
+              <a class="dropdown__content-item">Salt Lake City International Airport</a>
             </div>
           </div>
           <div class="dropdown">
             <button class="dropdown-btn">Filter resorts by</button>
             <div class="dropdown__content">
-              <a class="dropdown__content-item" href="#">Child Friendly</a>
-              <a class="dropdown__content-item" href="#">Highest Peak</a>
-              <a class="dropdown__content-item" href="#">Longest Run</a>
-              <a class="dropdown__content-item" href="#">Night Skiing</a>
-              <a class="dropdown__content-item" href="#">Most Advanced Runs</a>
-              <a class="dropdown__content-item" href="#">Most Snowfall</a>
-              <a class="dropdown__content-item" href="#">Total Lifts</a>
-              <a class="dropdown__content-item" href="#">Total Slopes</a>
+              <a class="dropdown__content-item">Child Friendly</a>
+              <a class="dropdown__content-item">Highest Peak</a>
+              <a class="dropdown__content-item">Longest Run</a>
+              <a class="dropdown__content-item">Night Skiing</a>
+              <a class="dropdown__content-item">Most Advanced Runs</a>
+              <a class="dropdown__content-item">Most Snowfall</a>
+              <a class="dropdown__content-item">Total Lifts <input type="number" min="0" id="number-input-lifts"></a>
+              <a class="dropdown__content-item">Total Slopes <input type="number" min="0" id="number-input-slopes"></a>
             </div>
           </div>
           <button class="searchbar-find-btn">
@@ -77,65 +77,11 @@
 <section class="locations" id="resorts">
   <div class="swiper locations-swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="card">
-          <img class="card__image" src="./images/angelfire_night.jpg" alt="Night skiing at Angel Fire" />
-          <div class="card-text-container">
-            <p class="card__location">Angel Fire, New Mexico</p>
-            <p class="card__title">Angel Fire Resort</p>
-            <p class="card__description">Perfectly positioned in the Sangre de Cristo Mountains, Angel Fire Resort offers the only night skiing in New Mexico.</p>
-          </div>
-        </div>
       </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img class="card__image" src="./images/crestedbutte.png" alt="Crested Butte, CO" />
-          <div class="card-text-container">
-            <p class="card__location">Crested Butte, CO</p>
-            <p class="card__title">Crested Butte Mountain Resort</p>
-            <p class="card__description">One of the Best Ski Resorts in Colorado, offering thrilling terrain for skiing and adventure.</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img class="card__image" src="./images/jacksonhole.jpg" alt="Jackson Hole" />
-          <div class="card-text-container">
-            <p class="card__location">Jackson Hole, Wyoming</p>
-            <p class="card__title">Jackson Hole Mountain Resort</p>
-            <p class="card__description">Explore one of the most premier winter destinations with some of the best slopes in the world.</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img class="card__image" src="./images/jacksonhole.jpg" alt="Jackson Hole" />
-          <div class="card-text-container">
-            <p class="card__location">Jackson Hole, Wyoming</p>
-            <p class="card__title">Jackson Hole Mountain Resort</p>
-            <p class="card__description">Explore one of the most premier winter destinations with some of the best slopes in the world.</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img class="card__image" src="./images/jacksonhole.jpg" alt="Jackson Hole" />
-          <div class="card-text-container">
-            <p class="card__location">Jackson Hole, Wyoming</p>
-            <p class="card__title">Jackson Hole Mountain Resort</p>
-            <p class="card__description">Explore one of the most premier winter destinations with some of the best slopes in the world.
-              Explore one of the most premier winter destinations with some of the best slopes in the world
-              Explore one of the most premier winter destinations with some of the best slopes in the world
-              Explore one of the most premier winter destinations with some of the best slopes in the world
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+
         <p class="locations__subtext">Chart your
           <span class="locations__subtext_span">course!</span>
         </p>
@@ -226,6 +172,18 @@
           <p class="modal__caption"></p>
       </div>
     </div>
+    <template id="card-template">
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card__image" src="" alt="" />
+          <div class="card-text-container">
+            <p class="card__location"></p>
+            <p class="card__title"></p>
+            <p class="card__description"></p>
+          </div>
+        </div>
+      </div>
+    </template>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

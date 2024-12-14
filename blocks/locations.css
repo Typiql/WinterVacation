@@ -17,6 +17,9 @@
   color: #75a7d0;
 }
 
+/* .swiper-wrapper {
+} */
+
 .swiper {
   display: flex;
   max-width: 1110px;

@@ -112,11 +112,6 @@
   background-color: #ddd;
 }
 
-.dropdown__content-item.selected {
-  background-color: #e0f7fa; /* Highlight background color */
-  color: #007bff; /* Highlighted text color */
-}
-
 .dropdown:hover .dropdown__content {
   display: block;
 }

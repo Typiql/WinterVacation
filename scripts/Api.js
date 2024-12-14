@@ -10,7 +10,7 @@ export default class Api {
       .catch((error) => {
         console.error(`Error fetching Resort data: `, error);
         throw error;
-      });
+      })
   }
 
   _handleRequest(res) {
@@ -23,3 +23,4 @@ const api = new Api({
 });
 
 export { api };
+
