@@ -52,6 +52,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   white-space: normal;
+<<<<<<< HEAD
 }
 
 @media (max-width: 768px) {
@@ -122,4 +123,7 @@
   .card__description {
     -webkit-line-clamp: 4;
   }
+=======
+  overflow: hidden;
+>>>>>>> 28a716116d2d3c8296914bf33c2757b984725e3f
 }
