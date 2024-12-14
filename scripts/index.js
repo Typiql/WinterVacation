@@ -12,7 +12,7 @@ api.getResortData()
     const swiper = new Swiper('.locations-swiper', {
       loop: true,
       spaceBetween: 10,
-      slidesPerView: 3,
+      slidesPerView: 2,
       centeredSlides: true,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -25,6 +25,11 @@ api.getResortData()
       scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
+      },
+      breakpoints: {
+        650: {
+          slidesPerView: 3,
+        },
       },
     });
 

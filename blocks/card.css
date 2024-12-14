@@ -69,6 +69,10 @@
     height: 230px;
   }
 
+  .card-text-container {
+    padding:5px 10px;
+  }
+
   .card__location,
   .card__title {
     font-size: 14px;
@@ -79,10 +83,9 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 490px) {
   .card {
-    max-width: 130px;
-    padding: 10px;
+    max-width: 100%;
     height: 300px;
   }
 
@@ -91,32 +94,7 @@
   }
 
   .card-text-container {
-    padding: 5px 2px;
-  }
-
-  .card__location,
-  .card__title {
-    font-size: 12px;
-  }
-
-  .card__description {
-    -webkit-line-clamp: 4;
-  }
-}
-
-@media (max-width: 490px) {
-  .card {
-    max-width: 80%;
-    padding: 10px;
-    height: 230px;
-  }
-
-  .card__image {
-    height: 75px;
-  }
-
-  .card-text-container {
-    padding: 5px 2px;
+    padding: 5px 10px;
   }
 
   .card__location,
