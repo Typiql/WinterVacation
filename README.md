@@ -30,4 +30,4 @@ had gathered data from ski resorts across the US which allowed us to create a da
 ---
 
 **Deployed at:**  
-[Winter Vacation Route Optimization](https://typiql.github.io/WinterVacation/)
+[Winter Vacation](https://typiql.github.io/WinterVacation/)
