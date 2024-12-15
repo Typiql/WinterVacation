@@ -1,23 +1,33 @@
-This project was created for **Triple Ten's December Code Jam**. 
+# Winter Vacation Route Optimization
 
-Assignment: "We challenge the participants to create an optimal route for winter vacations."
+This project was created for **Triple Ten's December Code Jam**.
 
-**Tech Used**
+---
+
+### **Tech Used**
 - HTML
 - CSS
-- Python
+- Javascript
 
+---
 
-**Process**
+### **Process**
 
-We created the design and layout using Figma, and followed the design to create the visual layout. We gathered data from Kaggle about various ski resorts. The team used the OSMnx network for real-world routing in order to optimize our route. 
+The software engineers had created a design using Figma , which was then converted into a responsive HTML/CSS layout.
+We had used "Swiper" and "Leaflet" Javascript libraries to create a map and a slider. The Data engineering team
+had gathered data from ski resorts across the US which allowed us to create a database of ski resorts with their respective locations and amenities.
 
-**Team Members**
+---
 
-- Bridget Due
-- Michael Fulciniti
-- Alex Johnson
-- Ana Maria Martinez
-- Martin Young
+### **Team Members**
 
-Deployed at: 
+- Bridget Due (Data Engineer)
+- Michael Fulciniti (Data Engineer)
+- Alex Johnson (Software Engineer)
+- Ana Maria Martinez (Software Engineer)
+- Martin Young (Software Engineer)
+
+---
+
+**Deployed at:**  
+[Winter Vacation Route Optimization](https://typiql.github.io/WinterVacation/)
