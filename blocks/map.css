@@ -1,4 +1,5 @@
 .map {
-height: 710px;
-background-color: antiquewhite;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto 80px;
 }

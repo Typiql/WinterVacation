@@ -1,4 +1,3 @@
-//this class is just missing the .headers for when you install full APIs functionality
 export default class Api {
   constructor({ dataUrl }) {
     this.dataUrl = dataUrl;

@@ -1,9 +1,10 @@
 import './populateCards.js';
 import './filter.js';
-import { api } from "./Api.js";
-import { generateCards } from "./populateCards.js";
-import { initializeCardEvent } from "./imageModal.js";
-import { initializeFilters } from "./filter.js";
+import { api } from './Api.js';
+import { generateCards } from './populateCards.js';
+import { initializeCardEvent } from './imageModal.js';
+import { initializeFilters } from './filter.js';
+import { initializeMap } from './map.js';
 
 api.getResortData()
   .then((data) => {
@@ -35,7 +36,8 @@ api.getResortData()
 
     initializeCardEvent();
     initializeFilters(swiper);
+    initializeMap(data);
   })
   .catch((error) => {
-    console.error(error);
+    console.error('Error fetching resort data:', error);
   });
