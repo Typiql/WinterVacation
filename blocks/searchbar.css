@@ -253,3 +253,12 @@ width: 100%;
     font-size: 12px;
   }
 }
+
+@media (max-width: 340px) {
+
+  .searchbar-find-btn {
+    font-size: 12px;
+    text-align: center;
+  }
+
+}

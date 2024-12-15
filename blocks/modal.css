@@ -12,7 +12,7 @@
   opacity: 0;
   padding: 0 20px;
   transition: all 0.3s ease;
-  z-index: 100;
+  z-index: 9999;
   font-family: "SourceSerifPro", "Times New Roman", serif;
   overflow: hidden;
 }
@@ -141,6 +141,11 @@
     bottom: 0;
   }
 
+  .modal__container {
+    max-height: fit-content;
+    min-height: 20vw;
+  }
+
   .modal__close-btn {
     top: 20px;
     right: 10px;
@@ -149,11 +154,17 @@
   .modal__image-wrapper {
     position: relative;
     width: 100%;
+    max-width: 100vw;
   }
 
   .modal-text-container {
     padding-top: 20px;
     max-height: 30vh;
     border-radius: 8px;
+    max-width: 100vw;
+  }
+
+  .modal__title {
+    font-size: 20px;
   }
 }
