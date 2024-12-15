@@ -6,11 +6,23 @@
 .locations__subtext {
   width: fit-content;
   height: fit-content;
-  margin: 32px auto;
+  margin: 12px auto;
   font-family: "Anta", "Times New Roman", serif;
   font-size: 64px;
   color: #7f7f7f;
   text-align: center;
+}
+
+.locations__description {
+  font-family: "SourceSerifPro", "Times New Roman", serif;
+  max-width: 80%;
+  margin: 0 auto 20px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  line-height: 1.4;
+  font-size: 24px;
+  background-color: #75a7d0;
 }
 
 .locations__subtext_span {
@@ -36,4 +48,44 @@
 
 .swiper-pagination {
   margin-top: 100px;
+}
+
+@media (max-width: 750px) {
+
+  .locations__description {
+    max-width: 90%;
+    width: 100%;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .locations__description {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+}
+
+@media (max-width: 519px) {
+
+  .locations {
+    margin: 40px 0 0;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .locations {
+    padding: 0;
+  }
+
+  .locations__description {
+    padding: 10px;
+    font-weight: 500;
+  }
+
 }

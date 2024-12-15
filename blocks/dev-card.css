@@ -40,3 +40,25 @@
   margin: 0;
   text-shadow: 1px 1px white;
 }
+
+@media (max-width: 450px) {
+
+  .dev-card__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dev-card__name {
+    font-size: 20px;
+  }
+
+  .dev-card__role {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .dev-card__role:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+
+}

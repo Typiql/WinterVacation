@@ -221,7 +221,7 @@ width: 100%;
     min-width: fit-content;
     padding: 10px;
     font-family: "SourceSerifPro-Bold", "Times New Roman", serif;
-    margin: 0 auto;
+    top: -45px;
   }
 
   .dropdown {
@@ -250,4 +250,12 @@ width: 100%;
   .dropdown__content-item {
     font-size: 12px;
   }
+}
+
+@media (max-width: 519px) {
+
+  /* .searchbar {
+    top: -100px;
+  } */
+
 }
