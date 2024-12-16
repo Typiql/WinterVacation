@@ -19,10 +19,6 @@ api.getResortData()
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
@@ -31,6 +27,9 @@ api.getResortData()
         650: {
           slidesPerView: 3,
         },
+        300: {
+          slidesPerView: 1,
+        }
       },
     });
 
