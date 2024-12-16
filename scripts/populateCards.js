@@ -15,20 +15,19 @@ export function generateCards(data) {
     cardContainer.setAttribute("data-average-snowfall", element.avg_annual_snowfall);
     cardContainer.setAttribute("data-total-slopes", element.total_slopes);
     cardContainer.setAttribute("data-total-lifts", element.total_lifts);
+    cardContainer.setAttribute("data-airport", element.airport);
+    cardContainer.setAttribute("data-child-friendly", element.child_friendly);
+    cardContainer.setAttribute("data-most-advanced-runs", element.most_advanced_runs || false);
+    cardContainer.setAttribute("data-longest-run", element.longest_run || false);
+    cardContainer.setAttribute("data-most-snowfall", element.most_snowfall || false);
 
-    cardImage.src = `./images/${element.image || "default.jpg"}`;
+    cardImage.src = `${element.image || "default.jpg"}`;
     cardImage.alt = `${element.resort} image`;
     cardLocation.textContent = `${element.city}, ${element.state}`;
     cardTitle.textContent = element.resort;
 
     const cardDescription = card.querySelector(".card__description");
-    cardDescription.innerHTML = `
-      <strong>Night Skiing:</strong> ${element.nightskiing}<br>
-      <strong>Peak Elevation:</strong> ${element.peak_elevation}<br>
-      <strong>Average Snowfall:</strong> ${element.avg_annual_snowfall}"<br>
-      <strong>Total Slopes:</strong> ${element.total_slopes}<br>
-      <strong>Total Lifts:</strong> ${element.total_lifts}
-    `;
+    cardDescription.textContent = element.description;
 
     swiperWrapper.appendChild(card);
   });

@@ -29,40 +29,65 @@ function filterCards(swiper) {
     ? parseInt(document.getElementById("number-input-slopes").value, 10)
     : NaN;
 
+  const selectedAirport = document.querySelector(".airport-filter.selected");
+  const airportCode = selectedAirport ? selectedAirport.id.split('-')[1].toUpperCase() : null;
+
   const cards = document.querySelectorAll(".card");
+  const visibleCards = [];
 
   cards.forEach(card => {
     let matches = true;
 
+    const resortData = {
+      totalLifts: parseInt(card.dataset.totalLifts, 10),
+      totalSlopes: parseInt(card.dataset.totalSlopes, 10),
+      difficultSlopes: parseInt(card.dataset.difficultSlopes, 10),
+      peakElevation: parseInt(card.dataset.peakElevation, 10),
+      avgAnnualSnowfall: parseInt(card.dataset.avgAnnualSnowfall, 10),
+      nightSkiing: card.dataset.nightSkiing === "true",
+      childFriendly: card.dataset.childFriendly === "true",
+      mostSnowfall: card.dataset.mostSnowfall === "true",
+      longestRun: card.dataset.longestRun === "true",
+      mostAdvancedRuns: card.dataset.mostAdvancedRuns === "true",
+      airport: card.dataset.airport.trim()
+    };
+
     selectedFilters.forEach(filter => {
       switch (filter) {
         case "Child Friendly":
-          if (card.dataset.childFriendly !== "true") matches = false;
+          if (!resortData.childFriendly) matches = false;
           break;
         case "Highest Peak":
-          if (parseInt(card.dataset.highestPeak, 10) < 4000) matches = false;
+          if (resortData.peakElevation < 12000) matches = false;
           break;
         case "Longest Run":
-          if (parseInt(card.dataset.longestRun, 10) < 10) matches = false;
+          if (!resortData.longestRun) matches = false;
           break;
         case "Night Skiing":
-          if (card.dataset.nightSkiing !== "true") matches = false;
+          if (!resortData.nightSkiing) matches = false;
           break;
         case "Most Advanced Runs":
-          if (parseInt(card.dataset.advancedRuns, 10) < 5) matches = false;
+          if (!resortData.mostAdvancedRuns) matches = false;
           break;
         case "Most Snowfall":
-          if (parseInt(card.dataset.snowfall, 10) < 200) matches = false;
+          if (!resortData.mostSnowfall) matches = false;
           break;
       }
     });
 
-    if (!isNaN(liftsValue) && parseInt(card.dataset.totalLifts, 10) < liftsValue) matches = false;
-    if (!isNaN(slopesValue) && parseInt(card.dataset.totalSlopes, 10) < slopesValue) matches = false;
+    if (airportCode && resortData.airport !== airportCode) {
+      matches = false;
+    }
+
+    if (!isNaN(liftsValue) && resortData.totalLifts < liftsValue) matches = false;
+    if (!isNaN(slopesValue) && resortData.totalSlopes < slopesValue) matches = false;
 
     const slide = card.closest('.swiper-slide');
     if (slide) {
       slide.style.display = matches ? "block" : "none";
+      if (matches) {
+        visibleCards.push(card);
+      }
     }
   });
 
