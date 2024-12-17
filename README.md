@@ -77,7 +77,12 @@ Second method:
 
 
 **Exploratory Data Analysis**
-![Alt text](relative-path-to-image/image-name.png)
+![Alt text](eda_1.png)
+![Alt text](eda_2.png)
+![Alt text](eda_3.png)
+![Alt text](eda_4.png)
+![Alt text](eda_5.png)
 
 **Project Notebook**
+[Link to Notebook](2024_code_jam_winter_vacation.ipynb)
 
