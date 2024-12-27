@@ -4,15 +4,8 @@ This project was created for **Triple Ten's December Code Jam**.
 
 ---
 
-# Description
-
-A fully responsive application with implemented HTML/CSS/Javascript for Midwest Skiing Resorts. Creates Routes based on the Filters used like NightSkiing or Most Advanced Runs.
-To Run the project, just click 'Go Live' on the bottom of VSCode. No Vite was added, do not need to run 'npm run dev'.
-NOTE: This is a copy of the original project @ https://typiql.github.io/WinterVacation/ so I may keep the original as is and add/deploy to this copy. 
-
----
-
 ### **Tech Used**
+
 - HTML
 - CSS
 - Javascript
@@ -46,19 +39,19 @@ had gathered data from ski resorts across the US which allowed us to create a da
 
 We utilized two datasets from Kaggle with ski resort data. We merged the datasets and dropped some unnecessary columns. Our final, merged dataframe consisted of the following columns:
 
-* ‘Resort’ — unique resort name
-* 'City' — the city the resort is located in
-* 'State' — the state the resort is in
-* ‘Longitude’ — longitude of resort
-* ‘Latitude’ — latitude of resort
-* ‘Difficult_slopes’ — number of hardest difficulty level slopes at the resort
-* ‘Total_slopes’ — Total number of slopes at the resort
-* ‘Nightskiing’ — Boolean column indicating if ski resort has night skiing or not
-* 'Peak_elevation' - the peak elevation in feet
-* 'Base_elevation' — the base elevation in feet
-* 'Vertical_drop' — the vertical drop in feet
-* 'Total lifts' — number of lifts available
-* 'Avg_annual_snowfall' — annual snowfall received in inches
+- ‘Resort’ — unique resort name
+- 'City' — the city the resort is located in
+- 'State' — the state the resort is in
+- ‘Longitude’ — longitude of resort
+- ‘Latitude’ — latitude of resort
+- ‘Difficult_slopes’ — number of hardest difficulty level slopes at the resort
+- ‘Total_slopes’ — Total number of slopes at the resort
+- ‘Nightskiing’ — Boolean column indicating if ski resort has night skiing or not
+- 'Peak_elevation' - the peak elevation in feet
+- 'Base_elevation' — the base elevation in feet
+- 'Vertical_drop' — the vertical drop in feet
+- 'Total lifts' — number of lifts available
+- 'Avg_annual_snowfall' — annual snowfall received in inches
 
 **Preprocessing**
 
@@ -68,9 +61,8 @@ We searched for good quality datasets with minimal preprocessing needed so both 
 2. Duplicate column in datasets; dropping one
 3. Drop unnecessary columns
 4. Rename resorts to merge dataframes
-5. Filtering down to just the resorts needed 
+5. Filtering down to just the resorts needed
 6. Merged dataframes
-
 
 **Random Model:**
 
@@ -83,7 +75,6 @@ Second method:
 **Optimized model:**
 — Built a custom function using nearest neighbor
 
-
 **Exploratory Data Analysis**
 ![Alt text](eda_1.png)
 ![Alt text](eda_2.png)
@@ -93,4 +84,3 @@ Second method:
 
 **Project Notebook**
 [Link to Notebook](2024_code_jam_winter_vacation.ipynb)
-
