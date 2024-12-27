@@ -4,6 +4,14 @@ This project was created for **Triple Ten's December Code Jam**.
 
 ---
 
+# Description
+
+A fully responsive application with implemented HTML/CSS/Javascript for Midwest Skiing Resorts. Creates Routes based on the Filters used like NightSkiing or Most Advanced Runs.
+To Run the project, just click 'Go Live' on the bottom of VSCode. No Vite was added, do not need to run 'npm run dev'.
+NOTE: This is a copy of the original project @ https://typiql.github.io/WinterVacation/ so I may keep the original as is and add/deploy to this copy. 
+
+---
+
 ### **Tech Used**
 - HTML
 - CSS
